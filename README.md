@@ -53,19 +53,22 @@
 - **樣式**: CSS (使用 CSS Variables)
 - **路由**: Nuxt Auto Routes
 - **SEO**: Nuxt SEO Meta, SSR
+- **套件管理**: Bun ⚡ (超快速！)
 
 ## 📦 安裝與執行
+
+> 💡 本專案使用 **Bun** 作為套件管理器，比 npm/yarn 快很多！
 
 ### 安裝依賴
 
 ```bash
-npm install
+bun install
 ```
 
 ### 開發模式
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 開啟瀏覽器訪問 `http://localhost:3000`
@@ -73,19 +76,32 @@ npm run dev
 ### 建置專案
 
 ```bash
-npm run build
+bun run build
 ```
 
 ### 預覽建置結果
 
 ```bash
-npm run preview
+bun run preview
 ```
 
 ### 生成靜態網站
 
 ```bash
-npm run generate
+bun run generate
+```
+
+### 如果還沒安裝 Bun
+
+```bash
+# macOS / Linux
+curl -fsSL https://bun.sh/install | bash
+
+# Windows
+powershell -c "irm bun.sh/install.ps1 | iex"
+
+# 或使用 npm 全域安裝
+npm install -g bun
 ```
 
 ## 🎨 主要頁面
@@ -170,18 +186,22 @@ npm run generate
 ### Vercel 部署
 
 ```bash
-npm run build
+bun run build
 ```
 
 將專案推送到 GitHub，然後在 Vercel 上導入專案。
 
+> 💡 在 Vercel 設定中，將 Install Command 改為 `bun install`，Build Command 改為 `bun run build`
+
 ### Netlify 部署
 
 ```bash
-npm run generate
+bun run generate
 ```
 
 將 `.output/public` 目錄部署到 Netlify。
+
+> 💡 在 Netlify 設定中，將 Build command 改為 `bun install && bun run generate`
 
 ## 📝 待辦事項
 

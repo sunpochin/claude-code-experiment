@@ -12,12 +12,17 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.4.1",
+    "drizzle-orm": "^0.44.7",
+    "jose": "^6.1.2",
     "nuxt": "^3.13.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.0",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest"
+    "@nuxt/devtools": "latest",
+    "@types/bcryptjs": "^3.0.0"
   }
 }
